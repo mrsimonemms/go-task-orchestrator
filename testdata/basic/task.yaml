@@ -1,0 +1,9 @@
+commands:
+  - copy:
+      src: "{{ .dir }}/file1.txt" # Pass a variable in Golang template format
+      dest: tmp
+  - move:
+      src: common/*
+      dest: tmp
+  # - delete:
+  #     path: files
